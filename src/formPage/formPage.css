@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+    --Marine-blue: hsl(213, 96%, 18%);
+    --Purplish-blue: hsl(243, 100%, 62%);
+    --Pastel-blue: hsl(228, 100%, 84%);
+    --Light-blue: hsl(206, 94%, 87%);
+    --Strawberry-red: hsl(354, 84%, 57%);
+
+    --Cool-gray: hsl(231, 11%, 63%);
+    --Light-gray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+}
+
+h1, p, h5 {
+    font-family: 'Ubuntu', sans-serif;;
+}
+
+main {
+    background-color: #EEF5FF;
+    height: 100vh;
+    width: 100%;
+}
+
+h1 {
+    color: var(--Marine-blue);
+    margin: 0px 0px 12px 0px;
+}
+
+p {
+    color: var(--Cool-gray);
+    margin: 0;
+    font-size: 16px;
+}
+
+label {
+    color: var(--Marine-blue);
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.light-blue {
+    border: none!important;
+    background-color: hsl(206, 94%, 87%);
+}
+
+.marine {
+    color: var(--Marine-blue)!important;
+}
+
+.title {
+    margin-bottom: 50px;
+}
+
+.next {
+    height: 48px;
+    width: 123px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background-color: var(--Marine-blue);
+    font-size: 1em;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.next:hover {
+    background-color: #174A89;
+}
+
+.confirm {
+    height: 48px;
+    width: 123px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background-color: var(--Purplish-blue);
+    font-size: 1em;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.go-back {
+    color: var(--Cool-gray);
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 1em;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+
+.personal-info {
+    height: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.confirm:hover {
+    background-color: #F9818D;
+}
+
+.wrapper {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    max-width: 938px;
+    max-height: 572px;
+    border-radius: 20px;
+    display: flex;
+    padding: 15px;
+    gap: 100px;
+}
+
+.blocks {
+    width: 100%;
+    height: 100%;
+}
+
+.first-block {
+    background-image: url('../images/bg-sidebar-desktop.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 245px;
+    padding: 30px 0px 0px 30px;
+}
+
+input {
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid var(--Cool-gray);
+    font-size: 17px;
+    padding: 0px 15px 0px 15px;
+    color: var(--Marine-blue);
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: var(--Cool-gray);
+    font-weight: 500;
+}
+
+input:hover {
+    border: 1px solid var(--Marine-blue);
+}
+
+input:focus {
+    outline: none;
+    font-size: 17px;
+}
+
+.second-block {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    /*padding-top: 40px; */
+    padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.steps {
+    display: flex;
+    gap: 15px;
+}
+
+.round {
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33px;
+    width: 33px;
+}
+
+h5 {
+    margin: 0;
+    text-transform: uppercase;
+    color: #F8FAFF;
+}
+
+.round p {
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+}
+
+.steps {
+    margin-bottom: 30px;
+}
+
+.step-num {
+    font-weight: normal;
+    color: #BAB8FF;
+}
+
+.steps-wrapper {
+    margin-top: 10px;
+}
+
+
+.price-choice {
+    width: 100%;
+    display: flex;
+    gap: 18px;
+}
+
+.price-block {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--Light-gray);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.price-block:hover {
+    border: 1px solid #544D91;
+}
+
+.active {
+    background-color: #F8F9FE;
+    border: 1px solid #544D91!important;
+}
+
+.price-block p {
+    font-size: 0.9em;
+}
+
+.icon {
+    width: 33%;
+    margin-top: 4px;
+}
+
+.price-text {
+    margin-top: 45px;
+}
+
+.price-p {
+    margin-top: 7px;
+}
+
+.add-ons-price {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.price-name {
+    color: var(--Marine-blue);
+    font-weight: 700;
+}
+
+.two-month-free {
+    color: var(--Marine-blue);
+    margin: 7px 0px 7px 0px;
+    font-weight: 500;
+    font-size: 0.8em;
+}
+
+.choose-box {
+    background-color: #04285A;
+    height: 12px;
+    width: 30px;
+    border-radius: 50px;
+    padding: 3px;
+    border: 1px solid var(--Marine-blue);
+    cursor: pointer;
+}
+
+.round-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bubble { 
+    width: 12px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #FFFEFF;
+    position: absolute;
+    transition: right 5s ease, left 5s ease;
+}
+
+.bl {
+    left: 0;
+}
+
+.br {
+    right: 0;
+}
+
+
+
+.monthly-yearly {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #F8F9FE;
+    padding: 14px 0px 15px 0px;
+    border-radius: 10px;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.choosen {
+    color: var(--Marine-blue);
+}
+
+.unchoose {
+    color: var(--Cool-gray);
+}
+
+.monthly {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.yearly {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.go-back:hover {
+    color: var(--Marine-blue);
+}
+
+
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 36%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.add-ons-content {
+    width: 100%;
+}
+
+.add-ons-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px;
+    border: 1px solid var(--Light-gray);
+    border-radius:10px;
+    align-items: center;
+    cursor: pointer;
+    min-height: 33px;
+}
+
+.add-ons-block:hover {
+   /* background-color: #F8F9FE;*/
+    border: 1px solid #544D91;
+}
+
+.add-ons-check {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-ons-p {
+    color: var(--Cool-gray);
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.add-ons-block p {
+    color: #544D91;
+    font-weight: 400;
+}
+
+.labels label {
+    margin-bottom: 0;
+}
+
+.add-ons-t {
+    color: var(--Marine-blue);
+    font-weight: 700;
+}
+
+.checkbox-cust {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    height: 33px;
+}
+/* Hide the browser's default checkbox */
+.checkbox-cust input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+  
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+  
+/* On mouse-over, add a grey background color */
+.checkbox-cust:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+/* When the checkbox is checked, add a blue background */
+.checkbox-cust input:checked ~ .checkmark {
+    background-color: #473CFF;
+}
+  
+ /* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the checkmark when checked */
+.checkbox-cust input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+/* Style the checkmark/indicator */
+.checkbox-cust .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+.review {
+    background-color: #F8F9FE;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.plan-name h4 {
+    color: #082449;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.plans-review {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--Light-gray);
+    padding-bottom: 25px;
+}
+
+.plan-price {
+    font-weight: 700;
+    color: var(--Marine-blue);
+}
+
+.plan-name p {
+    text-decoration: underline;
+    font-weight: 400;
+    text-decoration-thickness: 2px;
+    cursor: pointer;
+}
+
+.plan-name p:hover {
+    color: var(--Marine-blue);
+}
+
+.first-add-ons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.add-ons-review-price {
+    color: var(--Marine-blue);
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 23px 0px 23px;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.total h2 {
+    color: var(--Purplish-blue);
+    margin: 0;
+    font-size: 1.3em;
+}   
+
+.personal-info {
+    margin-top: 40px;
+}
+
+.thanks-container {
+    height: 100%;
+}
+
+.thanks h1 {
+    margin: 0;
+    margin-top: 15px;
+}
+
+.thanks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.thanks p {
+    white-space: pre-line;
+    font-weight: 400;
+    line-height: 23px;
+    font-size: 1.1em;
+}
+
+
+
+.label-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.error {
+    color: #D83F51;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.input-error {
+    border: 1px solid #D83F51;
+}
+
+.input-error:hover {
+    border: 1px solid #D83F51;
+}
+
+
+@media screen and (max-width:475px){
+    .wrapper {
+        flex-direction: column;
+        max-height: unset;
+    }
+
+    .first-block {
+        background-image: url('../images/bg-sidebar-mobile.svg');
+        background-repeat: no-repeat;
+        max-width: unset;
+        padding: 0;
+        height: 100%;
+        background-size: contain;
+    }
+
+    .steps-wrapper {
+        margin-top: 0;
+        display: flex;
+        gap: 23px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .step-title {
+        display: none;
+    }
+
+    .steps {
+        margin: 32px 0px 34px 0px;
+    }
+
+    .wrapper {
+        gap: 0;
+        padding: 0;
+        background-color: #ECF3FD;
+    }
+
+    .second-block {
+        padding: 0;
+        justify-content: center;
+        width: unset;
+    }
+
+    .personal-info {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 24px;
+        position: absolute;
+        left: 50%;
+        top: 37.3%;
+        transform: translate(-50%, -50%);
+        max-height: 375px;
+        margin: 0;
+        max-width: 343px;
+        min-width: 296px;
+    }
+
+    .title {
+        margin-bottom: 25px;
+    }
+
+    .title-p {
+        width: 235px;
+    }
+
+    input::placeholder {
+        font-weight: 700;
+    }
+
+    label {
+        font-size: 0.8em;
+    }
+        
+    .button-wrapper {
+        margin: 0;
+        padding: 15px 0px 15px 0px;
+        position: absolute;
+        bottom: 0;
+        background-color: #fff;
+    }
+
+    .next {
+        margin-right: 15px;
+        border-radius: 5px;
+    }
+
+    input {
+        border-radius: 5px;
+        border: 1px solid var(--Light-gray);
+    }
+
+    .price-choice {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .price-block {
+        flex-direction: row;
+        gap: 15px;
+        width: unset;
+        align-items: center;
+        max-height: 50px;
+    }
+
+    .icon {
+        margin: 0;
+        width: unset;
+    }
+
+    .price-text {
+        margin: 0;
+    }
+
+    .monthly-yearly {
+        margin-top: 24px;
+    }
+
+    .go-back {
+        margin-left: 15px;
+    }
+
+    .plans-info {
+        max-height: 440px;
+        top: 41.2%;
+    }
+
+    .plans-plan {
+        width: 250px;
+    }
+
+    .error {
+        font-size: 0.9em;
+    }
+
+    .add-ons-price {
+        font-size: 0.9em;
+    }
+
+    .labels {
+        left: 45%!important;
+    }
+
+}
