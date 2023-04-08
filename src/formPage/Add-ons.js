@@ -43,7 +43,7 @@ function AddOns({ selectedOption, onlineServiceChecked, setOnlineServiceChecked,
         setCustomCheck(event.target.checked)
     }
     return (
-        <div className="personal-info">
+        <div className="personal-info add-ons-wrapper">
         <div className="title">
             <h1>Pick add-ons</h1>
             <p>Add-ons help enhance your gaming experience.</p>

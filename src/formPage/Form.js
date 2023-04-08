@@ -36,6 +36,11 @@ function Form(){
               name: "Enter a valid name",
             }));
           }
+        }else {
+            setInputErrors((prevState) => ({
+                ...prevState,
+                name: "",
+              }));
         }
         if (!email || !email.includes('@')) {
           errors.email = true;
@@ -50,6 +55,11 @@ function Form(){
               email: "Enter a valid email",
             }));
           }
+        }else {
+            setInputErrors((prevState) => ({
+                ...prevState,
+                email: "",
+              }));
         }
 
         if (!number || /[^\d]/g.test(number) || number.length < 15) {
@@ -124,10 +134,10 @@ function Form(){
                 </div>
             )
         }
+
+       
     }
     return (
-        <div className="form">
-            <div className="body">
             <main>
                 <div className="page-content">
                     <div className="wrapper">
@@ -161,8 +171,8 @@ function Form(){
                                         </div>
                                     </div>
                                 <div className="steps">
-                                    <div className={`round ${step === 3 ? 'round light-blue' : ''}`}>
-                                            <p className={`${step === 3 ? 'marine' : ''}`}>4</p>
+                                    <div className={`round ${step === 3 || step === 4 ? 'round light-blue' : ''}`}>
+                                            <p className={`${step === 3 || step === 4 ? 'marine' : ''}`}>4</p>
                                         </div>
                                         <div className="step-title">
                                             <h5 className="step-num">Step 4</h5>
@@ -178,8 +188,6 @@ function Form(){
                     </div>
                 </div>
             </main>
-            </div>
-        </div>
     )
 }
 

@@ -607,11 +607,7 @@ h5 {
 }
 
 
-@media screen and (max-width:475px){
-    .wrapper {
-        flex-direction: column;
-        max-height: unset;
-    }
+@media screen and (max-width:767px){
 
     .first-block {
         background-image: url('../images/bg-sidebar-mobile.svg');
@@ -639,7 +635,8 @@ h5 {
     }
 
     .wrapper {
-        gap: 0;
+        display: block;
+        max-height: unset;
         padding: 0;
         background-color: #ECF3FD;
     }
@@ -691,6 +688,12 @@ h5 {
     .next {
         margin-right: 15px;
         border-radius: 5px;
+    }
+
+    .confirm {
+        margin-right: 15px;
+        border-radius: 5px;
+        font-weight: 500;
     }
 
     input {
@@ -746,7 +749,46 @@ h5 {
     }
 
     .labels {
-        left: 45%!important;
+        width: 100%;
+        left: 64%!important;
     }
+
+    .add-ons-block {
+        padding: 10px 15px 10px 15px;
+    }
+
+    .add-ons-p {
+        font-size: 0.8em;
+    }
+
+    .add-ons-wrapper {
+        max-height: 315px;
+        top: 35.2%;
+    }
+
+    .summary {
+        top: 37.3%;
+    }
+
+    .thanks-container {
+        background-color: #fff;
+        margin-right: 15px;
+        margin-left: 15px;
+        border-radius: 15px;
+        position: absolute;
+        top: 13.6%;
+        max-height: 400px;
+    }
+
+    .thanks-p {
+        white-space: initial!important;
+        width: 85%;
+    }
+
+    .thanks-logo {
+        height: 57px;
+        aspect-ratio: 1;
+    }
+
 
 }

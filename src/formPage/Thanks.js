@@ -9,7 +9,7 @@ function Thanks(){
         <div className="thanks">
         <img alt="logo" className="thanks-logo" src={Images.confirmed}></img>
             <h1>Thank you!</h1>
-            <p>Thanks for confirming your subscription! We hope you have{"\n"} fun using our platform. If you ever need support, please feel{"\n"}free to email us at support@loremgming.com.</p>
+            <p className="thanks-p">Thanks for confirming your subscription! We hope you have{"\n"} fun using our platform. If you ever need support, please feel{"\n"}free to email us at support@loremgming.com.</p>
         </div>
 
     </div>

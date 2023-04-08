@@ -7,7 +7,7 @@ function Info({ name, setName, email, setEmail, number, setNumber, handleNextCli
         <div className="personal-info">
             <div className="title">
                 <h1>Personal info</h1>
-                <p class="title-p">Please provide your name, email address, and phone number.</p>
+                <p className="title-p">Please provide your name, email address, and phone number.</p>
             </div>
 
             <form>
@@ -23,7 +23,7 @@ function Info({ name, setName, email, setEmail, number, setNumber, handleNextCli
                 <div className="email-wrapper input-wrapper">
                     <div className="label-content">
                         <label htmlFor="email">Email Address</label>
-                        {inputErrors.name && <p className="error">{inputErrors.email}</p>}
+                        {inputErrors.email && <p className="error">{inputErrors.email}</p>}
                     </div>
                     <input className={`email ${inputErrors.email ? 'input-error' : ''}`} value={email} onChange={(event) => setEmail(event.target.value)} type="email" autoComplete="off" name="email" placeholder="vanessamint@"></input>
                 </div>

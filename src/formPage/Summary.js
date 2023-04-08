@@ -131,7 +131,7 @@ function Summary({ setStep, selectedOption, selectedPrice, onlineServiceChecked,
 
 
     return (
-        <div className="personal-info">
+        <div className="personal-info summary">
         <div className="title">
             <h1>Finishing up</h1>
             <p>Double-check everything looks OK before confirming.</p>
