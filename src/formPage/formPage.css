@@ -41,6 +41,11 @@ label {
     font-weight: 500;
 }
 
+.h5-t {
+    font-size: 0.9em;
+    margin-top: 3px;
+}
+
 .light-blue {
     border: none!important;
     background-color: hsl(206, 94%, 87%);
@@ -62,8 +67,8 @@ label {
     cursor: pointer;
     background-color: var(--Marine-blue);
     font-size: 1em;
-    border-radius: 10px;
-    font-weight: 700;
+    border-radius: 8px;
+    font-weight: 500;
 }
 
 .next:hover {
@@ -154,7 +159,7 @@ input[type="number"] {
 input {
     height: 45px;
     border-radius: 10px;
-    border: 1px solid var(--Cool-gray);
+    border: 1px solid var(--Light-gray);
     font-size: 17px;
     padding: 0px 15px 0px 15px;
     color: var(--Marine-blue);
@@ -163,7 +168,7 @@ input {
 
 input::placeholder {
     color: var(--Cool-gray);
-    font-weight: 500;
+    font-weight: 700;
 }
 
 input:hover {

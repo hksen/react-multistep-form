@@ -105,7 +105,7 @@ function Form(){
             />;
         }else if(step === 3){
             return <Summary setStep={setStep} selectedOption={selectedOption} selectedPrice={selectedPrice} onlineServiceChecked={onlineServiceChecked} storageChecked={storageChecked} customChecked={customChecked}/>
-        }else if(step == 4){
+        }else if(step === 4){
             return <Thanks/>
         }
     }
@@ -149,7 +149,7 @@ function Form(){
                                     </div>
                                     <div className="step-title">
                                         <h5 className="step-num">Step 1</h5>
-                                        <h5>Your info</h5>
+                                        <h5 className="h5-t">Your info</h5>
                                     </div>
                                 </div>
                                 <div className="steps">
@@ -158,7 +158,7 @@ function Form(){
                                         </div>
                                         <div className="step-title">
                                             <h5 className="step-num">Step 2</h5>
-                                            <h5>Select plan</h5>
+                                            <h5 className="h5-t">Select plan</h5>
                                         </div>
                                     </div>
                                 <div className="steps">
@@ -167,7 +167,7 @@ function Form(){
                                         </div>
                                         <div className="step-title">
                                             <h5 className="step-num">Step 3</h5>
-                                            <h5>Add-ons</h5>
+                                            <h5 className="h5-t">Add-ons</h5>
                                         </div>
                                     </div>
                                 <div className="steps">
@@ -176,7 +176,7 @@ function Form(){
                                         </div>
                                         <div className="step-title">
                                             <h5 className="step-num">Step 4</h5>
-                                            <h5>Summary</h5>
+                                            <h5 className="h5-t">Summary</h5>
                                         </div>
                                     </div>
                             </div>

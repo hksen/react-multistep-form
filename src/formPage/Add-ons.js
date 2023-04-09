@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './formPage.css';
 
 function AddOns({ selectedOption, onlineServiceChecked, setOnlineServiceChecked, storageChecked, setStorageCheck, customChecked, setCustomCheck}){

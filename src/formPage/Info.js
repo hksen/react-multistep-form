@@ -18,14 +18,14 @@ function Info({ name, setName, email, setEmail, number, setNumber, handleNextCli
                         <label htmlFor="name">Name</label>
                         {inputErrors.name && <p className="error">{inputErrors.name}</p>}
                     </div>
-                    <input className={`name ${inputErrors.name ? 'input-error' : ''}`} value={name} onChange={(event) => setName(event.target.value)} type="text" autoComplete="off" name="name" placeholder="Vanessa Mint"></input>
+                    <input className={`name ${inputErrors.name ? 'input-error' : ''}`} value={name} onChange={(event) => setName(event.target.value)} type="text" autoComplete="off" name="name" placeholder="e.g Stephen King"></input>
                  </div>
                 <div className="email-wrapper input-wrapper">
                     <div className="label-content">
                         <label htmlFor="email">Email Address</label>
                         {inputErrors.email && <p className="error">{inputErrors.email}</p>}
                     </div>
-                    <input className={`email ${inputErrors.email ? 'input-error' : ''}`} value={email} onChange={(event) => setEmail(event.target.value)} type="email" autoComplete="off" name="email" placeholder="vanessamint@"></input>
+                    <input className={`email ${inputErrors.email ? 'input-error' : ''}`} value={email} onChange={(event) => setEmail(event.target.value)} type="email" autoComplete="off" name="email" placeholder="e.g stephenking@lorem.com"></input>
                 </div>
                 <div className="number-wrapper input-wrapper">
                     <div className="label-content">

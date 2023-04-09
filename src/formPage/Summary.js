@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './formPage.css';
 
 function Summary({ setStep, selectedOption, selectedPrice, onlineServiceChecked, storageChecked, customChecked }){
