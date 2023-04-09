@@ -66,7 +66,7 @@ function AddOns({ selectedOption, onlineServiceChecked, setOnlineServiceChecked,
                     <input type="checkbox" checked={storageChecked} onChange={handleStorageCheck} name="online-service" className="checkbox"></input>
                     <span className="checkmark"></span>
 
-                    <div className="labels" style={{ left: '31%' }}>
+                    <div className="labels local-storage">
                         <label htmlFor="online-service" className="add-ons-t">Larger storage</label>
                         <label htmlFor="online-service" className="add-ons-p">Extra 1TB pf cloud save</label>
                     </div>
